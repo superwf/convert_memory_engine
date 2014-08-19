@@ -37,7 +37,6 @@ describe 'test convert task' do
     load File.join(Dir.pwd, 'lib/tasks/convert_memory_engine.rake')
     app['convert_memory_engine'].invoke
     table_info = @db.exec_query "SHOW TABLE STATUS WHERE name = '#{@table_name}'"
-    puts table_info.rows[0][1]
     expect(table_info.rows[0][1]).to eq('MEMORY')
   end
 end
