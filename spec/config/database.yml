@@ -1,0 +1,10 @@
+test:
+  host: localhost
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: test
+  pool: 1
+  username: root
+  password: '1'
+  socket: /var/run/mysqld/mysqld.sock

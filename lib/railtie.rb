@@ -1,10 +1,10 @@
 require 'rake'
 require 'rails'
 require 'active_record'
-module SpeedupTest
+module ConvertMemoryEngine
   class Railtie < ::Rails::Railtie
     rake_tasks do
-      import File.dirname(File.dirname(__FILE__)) + '/tasks/speedup_test.task'
+      import File.dirname(File.dirname(__FILE__)) + '/lib/tasks/convert_memory_engine.rake'
     end
   end
 end

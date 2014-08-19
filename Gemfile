@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rake'
 gem 'mysql2'
 gem 'rails'
+gem 'guard-rspec'
 
-# Specify your gem's dependencies in speedup_test.gemspec
+gem 'rspec', '3.0.0'
+
+# Specify your gem's dependencies in convert_memory_engine.gemspec
 gemspec

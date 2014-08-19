@@ -1,5 +1,5 @@
-require "speedup_test/version"
+require "convert_memory_engine/version"
 
-module SpeedupTest
+module ConvertMemoryEngine
   require File.dirname(__FILE__) + '/railtie' if defined?(::Rails)
 end
