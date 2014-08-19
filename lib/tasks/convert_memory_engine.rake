@@ -17,6 +17,7 @@ task :convert_memory_engine do
         puts "table #{t} not converted, because no model for table #{t}"
       end
       db.execute "ALTER TABLE #{t} ENGINE = MEMORY"
+      puts "table #{t} converts success"
     end
   else
     raise "only in test mode"

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'speedup_test/version'
+require 'convert_memory_engine/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "speedup_test"
-  spec.version       = SpeedupTest::VERSION
+  spec.name          = "convert_memory_engine"
+  spec.version       = ConvertMemoryEngine::VERSION
   spec.authors       = ["wangfan"]
   spec.email         = ["wangfan@chgb.org.cn"]
   spec.summary       = %q{speed up rails test by mysql.}
