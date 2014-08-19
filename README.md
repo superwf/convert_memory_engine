@@ -1,6 +1,7 @@
 # SpeedupTest
 
-TODO: Write a gem description
+When i use rspec to do a lot of test, each time database is inserted data and truncate table, when tables grows the speed grow down too much. At first i convert the db engine from innodb to memory in db/seed.rb file. After that i write this gem to do the job for more app.
+Notice: Tables those contain text col can not convert to memory engine, so i convert those colums to string first. So if there are test case use too long string to insert, there would be trouble.
 
 ## Installation
 
@@ -18,11 +19,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+rake speedup_test RAILS_ENV=test
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/speedup_test/fork )
+1. Fork it ( https://github.com/superwf/speedup_test/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
